@@ -6,7 +6,7 @@ conditions:
 - name: SDTV
   negate: false
   required: true
-  source: television
+  source: TV
   type: source
 - name: Not 1080p
   type: resolution

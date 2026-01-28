@@ -6,12 +6,12 @@ conditions:
 - name: WEB-DL
   negate: false
   required: false
-  source: web_dl
+  source: WEBDL
   type: source
 - name: WEB
   negate: false
   required: false
-  source: television
+  source: TV
   type: source
 - name: Erai-Raws
   negate: false

@@ -11,11 +11,11 @@ conditions:
 - name: Not DVD
   negate: true
   required: true
-  source: dvd
+  source: DVD
   type: source
 - name: Not HDTV
   negate: true
   required: true
-  source: television
+  source: TV
   type: source
 tests: []

@@ -5,7 +5,7 @@ tags:
 conditions:
 - name: Season Pack
   negate: false
-  releaseType: season_pack
+  pattern: Season|Complete
   required: true
-  type: release_type
+  type: release_title
 tests: []

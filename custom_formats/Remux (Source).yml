@@ -6,6 +6,6 @@ conditions:
 - name: Remux
   negate: false
   required: true
-  source: bluray_raw
+  source: BLURAY
   type: source
 tests: []

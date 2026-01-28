@@ -11,7 +11,7 @@ conditions:
 - name: HDTV
   negate: false
   required: true
-  source: television
+  source: TV
   type: source
 - name: HANDJOB
   negate: false

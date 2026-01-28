@@ -19,17 +19,17 @@ conditions:
 - name: HDTV
   negate: false
   required: false
-  source: television
+  source: TV
   type: source
 - name: WEB-DL
   negate: false
   required: false
-  source: web_dl
+  source: WEBDL
   type: source
 - name: WEBRip
   negate: false
   required: false
-  source: webrip
+  source: WEBRIP
   type: source
 - name: ELiTE
   type: release_group
