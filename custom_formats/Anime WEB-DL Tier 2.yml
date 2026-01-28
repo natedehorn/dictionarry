@@ -16,7 +16,7 @@ conditions:
 - name: Erai-Raws
   negate: false
   pattern: Erai-Raws
-  required: false
+  required: true
   type: release_title
 - name: HorribleSubs
   negate: false

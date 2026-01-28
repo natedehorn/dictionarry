@@ -16,6 +16,6 @@ conditions:
 - name: Subsplease
   negate: false
   pattern: SubsPlease
-  required: false
+  required: true
   type: release_title
 tests: []
