@@ -1,0 +1,154 @@
+name: Extended Edition
+description: 'Matches releases that are specifically marked as extended editions.
+  Extended editions are longer versions of movies, typically including additional
+  content that was not in the theatrical release.
+
+  - Examples: `Extended Edition`, `Extended Cut`, `Director''s Extended Edition`
+
+  - Useful for users who prefer longer cuts of their favorite films'
+tags:
+- Edition
+conditions:
+- name: Extended Edition
+  negate: false
+  pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
+  required: true
+  type: release_title
+- name: Not IMAX
+  negate: true
+  pattern: IMAX
+  required: true
+  type: release_title
+- name: Not Open Matte
+  negate: true
+  pattern: Open Matte
+  required: true
+  type: release_title
+- name: Not Extended Clip
+  negate: true
+  pattern: Extended Clip
+  required: true
+  type: release_title
+tests:
+- conditionResults:
+  - matches: true
+    name: Extended Edition
+    negate: false
+    pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
+    required: true
+    type: release_title
+  - matches: false
+    name: Not IMAX
+    negate: true
+    pattern: IMAX
+    required: true
+    type: release_title
+  - matches: false
+    name: Not Open Matte
+    negate: true
+    pattern: Open Matte
+    required: true
+    type: release_title
+  - matches: false
+    name: Not Extended Clip
+    negate: true
+    pattern: Extended Clip
+    required: true
+    type: release_title
+  expected: true
+  id: 1
+  input: 'The Lord Of The Rings: The Two Towers 2002 Extended Edition 2160p UHD BluRay
+    REMUX HEVC DV HDR10Plus LPCM 5.1-Flights'
+  lastRun: '2025-02-27T00:00:00.000000'
+  passes: true
+- conditionResults:
+  - matches: true
+    name: Extended Edition
+    negate: false
+    pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
+    required: true
+    type: release_title
+  - matches: false
+    name: Not IMAX
+    negate: true
+    pattern: IMAX
+    required: true
+    type: release_title
+  - matches: false
+    name: Not Open Matte
+    negate: true
+    pattern: Open Matte
+    required: true
+    type: release_title
+  - matches: false
+    name: Not Extended Clip
+    negate: true
+    pattern: Extended Clip
+    required: true
+    type: release_title
+  expected: true
+  id: 2
+  input: Gladiator 2000 Extended Cut 2160p UHD BluRay REMUX HEVC DV HDR10Plus DTS-HD
+    MA 5.1-Flights
+  lastRun: '2025-02-27T00:00:00.000000'
+  passes: true
+- conditionResults:
+  - matches: false
+    name: Extended Edition
+    negate: false
+    pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
+    required: true
+    type: release_title
+  - matches: false
+    name: Not IMAX
+    negate: true
+    pattern: IMAX
+    required: true
+    type: release_title
+  - matches: false
+    name: Not Open Matte
+    negate: true
+    pattern: Open Matte
+    required: true
+    type: release_title
+  - matches: true
+    name: Not Extended Clip
+    negate: true
+    pattern: Extended Clip
+    required: true
+    type: release_title
+  expected: false
+  id: 3
+  input: Killers Of The Flower Moon 2023 Extended Clip 1080p AMZN WEB-DL DDP 5.1 H.264-FLUX
+  lastRun: '2025-02-27T00:00:00.000000'
+  passes: true
+- conditionResults:
+  - matches: false
+    name: Extended Edition
+    negate: false
+    pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
+    required: true
+    type: release_title
+  - matches: false
+    name: Not IMAX
+    negate: true
+    pattern: IMAX
+    required: true
+    type: release_title
+  - matches: false
+    name: Not Open Matte
+    negate: true
+    pattern: Open Matte
+    required: true
+    type: release_title
+  - matches: false
+    name: Not Extended Clip
+    negate: true
+    pattern: Extended Clip
+    required: true
+    type: release_title
+  expected: false
+  id: 4
+  input: 'Blade.Runner.1982.1080p.BluRay.REMUX.AVC.DTS-MA.5.1-HDEX'
+  lastRun: '2025-02-27T00:00:00.000000'
+  passes: true
