@@ -1,17 +1,11 @@
 name: Extended Edition
-description: 'Matches releases that are specifically marked as extended editions.
-  Extended editions are longer versions of movies, typically including additional
-  content that was not in the theatrical release.
-
-  - Examples: `Extended Edition`, `Extended Cut`, `Director''s Extended Edition`
-
-  - Useful for users who prefer longer cuts of their favorite films'
+description: Matches the 'Extended Edition' Regex Pattern
 tags:
 - Edition
 conditions:
 - name: Extended Edition
   negate: false
-  pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
+  pattern: Extended Edition
   required: true
   type: release_title
 - name: Not IMAX
@@ -34,7 +28,7 @@ tests:
   - matches: true
     name: Extended Edition
     negate: false
-    pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
+    pattern: Extended Edition
     required: true
     type: release_title
   - matches: false
@@ -65,7 +59,7 @@ tests:
   - matches: true
     name: Extended Edition
     negate: false
-    pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
+    pattern: Extended Edition
     required: true
     type: release_title
   - matches: false
@@ -96,25 +90,7 @@ tests:
   - matches: false
     name: Extended Edition
     negate: false
-    pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
-    required: true
-    type: release_title
-  - matches: false
-    name: Not IMAX
-    negate: true
-    pattern: IMAX
-    required: true
-    type: release_title
-  - matches: false
-    name: Not Open Matte
-    negate: true
-    pattern: Open Matte
-    required: true
-    type: release_title
-  - matches: true
-    name: Not Extended Clip
-    negate: true
-    pattern: Extended Clip
+    pattern: Extended Edition
     required: true
     type: release_title
   expected: false
@@ -126,25 +102,7 @@ tests:
   - matches: false
     name: Extended Edition
     negate: false
-    pattern: (?i)\b(Extended.?Edition|Extended.?Cut)\b
-    required: true
-    type: release_title
-  - matches: false
-    name: Not IMAX
-    negate: true
-    pattern: IMAX
-    required: true
-    type: release_title
-  - matches: false
-    name: Not Open Matte
-    negate: true
-    pattern: Open Matte
-    required: true
-    type: release_title
-  - matches: false
-    name: Not Extended Clip
-    negate: true
-    pattern: Extended Clip
+    pattern: Extended Edition
     required: true
     type: release_title
   expected: false

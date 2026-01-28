@@ -1,0 +1,22 @@
+name: Extended Edition
+pattern: (?i)\b(extended.?edition|extended.?cut)\b
+description: Matches releases that are specifically marked as extended editions or extended cuts
+tags:
+- Edition
+tests:
+- expected: false
+  id: 1
+  input: The Lord of the Rings The Return of the King 2003 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR
+  lastRun: '2025-02-27T00:00:00.000000'
+  passes: true
+- expected: true
+  id: 2
+  input: The Lord Of The Rings The Return Of The King 2003 Extended Edition 2160p UHD BluRay TrueHD 7 1 HDR x265-CtrlHD
+  lastRun: '2025-02-27T00:00:00.000000'
+  matchSpan:
+    end: 67
+    start: 51
+  matchedContent: Extended Edition
+  matchedGroups:
+  - Extended Edition
+  passes: true
