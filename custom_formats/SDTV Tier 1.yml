@@ -1,6 +1,6 @@
 name: SDTV Tier 1
 description: Matches SDTV.
-assignment: 0
+assignment: 1
 tags:
 - Release Group Tier
 conditions:

@@ -1,6 +1,6 @@
 name: 1080p HDTV Tier 2
 description: Matches 1080p HDTV.
-assignment: 0
+assignment: 1
 tags:
 - Release Group Tier
 conditions:

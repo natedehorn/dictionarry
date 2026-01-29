@@ -1,6 +1,6 @@
 name: Xvid
 description: Matches Xvid Regex
-assignment: 0
+assignment: 1
 tags:
 - Codec
 conditions:
