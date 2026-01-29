@@ -1,6 +1,6 @@
 name: 720p HDTV Tier 3
 description: Matches 720p HDTV.
-score: 1
+value: 1
 tags:
 - Release Group Tier
 conditions:

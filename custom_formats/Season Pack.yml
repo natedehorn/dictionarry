@@ -1,6 +1,6 @@
 name: Season Pack
 description: Matches Season Pack Release Type on Sonarr
-score: 1
+value: 1
 tags:
 - Enhancement
 conditions:
