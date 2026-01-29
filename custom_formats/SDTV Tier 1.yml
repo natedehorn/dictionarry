@@ -1,6 +1,5 @@
 name: SDTV Tier 1
 description: Matches SDTV.
-value: 1
 tags:
 - Release Group Tier
 conditions:
@@ -29,4 +28,6 @@ conditions:
   pattern: CtrlHD
   required: false
   type: release_group
+assignment:
+  score: 1
 tests: []

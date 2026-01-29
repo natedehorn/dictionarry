@@ -1,6 +1,5 @@
 name: SDTV
 description: Matches SDTV.
-value: 1
 tags:
 - Source
 conditions:
@@ -19,4 +18,6 @@ conditions:
   required: true
   negate: true
   resolution: 720p
+assignment:
+  score: 1
 tests: []

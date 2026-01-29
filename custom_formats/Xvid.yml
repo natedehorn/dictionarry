@@ -1,6 +1,5 @@
 name: Xvid
 description: Matches Xvid Regex
-value: 1
 tags:
 - Codec
 conditions:
@@ -19,4 +18,6 @@ conditions:
   required: true
   source: TV
   type: source
+assignment:
+  score: 1
 tests: []

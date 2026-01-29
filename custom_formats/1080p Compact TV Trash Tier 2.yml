@@ -1,6 +1,5 @@
 name: 1080p Compact TV Trash Tier 2
 description: Matches release groups who fall under 1080p Compact TV Trash Tier 2
-value: 1
 tags:
 - Release Group Tier
 - 1080p
@@ -47,6 +46,8 @@ conditions:
   pattern: PSA
   required: false
   type: release_group
+assignment:
+  score: 1
 tests:
 - conditionResults:
   - matches: true
