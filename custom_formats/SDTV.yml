@@ -1,6 +1,6 @@
 name: SDTV
 description: Matches SDTV.
-score: 0
+score: 1
 tags:
 - Source
 conditions:
