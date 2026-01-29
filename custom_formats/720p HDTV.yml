@@ -1,6 +1,6 @@
 name: 720p HDTV
 description: Matches 720p HDTV.
-assignment: 1
+score: 0
 tags:
 - Source
 conditions:

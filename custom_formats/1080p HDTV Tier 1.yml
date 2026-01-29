@@ -1,6 +1,6 @@
 name: 1080p HDTV Tier 1
 description: Matches 1080p HDTV.
-assignment: 1
+score: 0
 tags:
 - Release Group Tier
 conditions:
