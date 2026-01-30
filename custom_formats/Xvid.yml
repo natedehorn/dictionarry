@@ -12,15 +12,13 @@ conditions:
 - name: Not DVD
   negate: true
   required: true
-  source: DVD
   type: source
-  value: DVD
+  value: 0
 - name: Not HDTV
   negate: true
   required: true
-  source: TV
   type: source
-  value: TV
+  value: 1
 assignment:
   score: 1
 tests: []
