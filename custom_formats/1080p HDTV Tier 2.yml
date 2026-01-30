@@ -8,36 +8,43 @@ conditions:
   required: true
   resolution: 1080p
   type: resolution
+  value: 1080p
 - name: HDTV
   negate: false
   required: true
   source: TV
   type: source
+  value: TV
 - name: BTN
   type: release_group
   required: false
   negate: false
   pattern: BTN
+  value: BTN
 - name: DARKFLiX
   negate: false
   pattern: DARKFLiX
   required: false
   type: release_group
+  value: DARKFLiX
 - name: ViETNAM
   negate: false
   pattern: ViETNAM
   required: false
   type: release_group
+  value: ViETNAM
 - name: CBFM
   negate: false
   pattern: CBFM
   required: false
   type: release_group
+  value: CBFM
 - name: PLUTONiUM
   negate: false
   pattern: PLUTONiUM
   required: false
   type: release_group
+  value: PLUTONiUM
 assignment:
   score: 1
 tests: []

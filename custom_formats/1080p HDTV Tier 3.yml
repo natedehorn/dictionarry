@@ -8,16 +8,19 @@ conditions:
   required: true
   resolution: 1080p
   type: resolution
+  value: 1080p
 - name: HDTV
   negate: false
   required: true
   source: TV
   type: source
+  value: TV
 - name: HANDJOB
   negate: false
   pattern: HANDJOB
   required: false
   type: release_group
+  value: HANDJOB
 assignment:
   score: 1
 tests: []

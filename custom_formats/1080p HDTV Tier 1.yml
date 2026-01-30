@@ -8,26 +8,31 @@ conditions:
   required: true
   resolution: 1080p
   type: resolution
+  value: 1080p
 - name: HDTV
   negate: false
   required: true
   source: TV
   type: source
+  value: TV
 - name: CtrlHD
   negate: false
   pattern: CtrlHD
   required: false
   type: release_group
+  value: CtrlHD
 - name: EDPH
   type: release_group
   required: false
   negate: false
   pattern: EDPH
+  value: EDPH
 - name: NTb
   negate: false
   pattern: NTb
   required: false
   type: release_group
+  value: NTb
 assignment:
   score: 1
 tests: []

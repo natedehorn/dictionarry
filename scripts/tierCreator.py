@@ -95,7 +95,8 @@ def create_tier_format(tier,
             'negate': False,
             'pattern': group_name,
             'required': False,
-            'type': 'release_group'
+            'type': 'release_group',
+            'value': group_name
         }
         template['conditions'].append(release_group_condition)
 

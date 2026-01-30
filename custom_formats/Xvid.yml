@@ -8,16 +8,19 @@ conditions:
   pattern: Xvid
   required: true
   type: release_title
+  value: Xvid
 - name: Not DVD
   negate: true
   required: true
   source: DVD
   type: source
+  value: DVD
 - name: Not HDTV
   negate: true
   required: true
   source: TV
   type: source
+  value: TV
 assignment:
   score: 1
 tests: []

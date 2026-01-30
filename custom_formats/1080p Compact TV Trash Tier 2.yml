@@ -11,41 +11,49 @@ conditions:
   required: true
   resolution: 1080p
   type: resolution
+  value: 1080p
 - name: x265
   negate: false
   pattern: x265 (Efficient)
   required: true
   type: release_title
+  value: x265 (Efficient)
 - name: HDTV
   negate: false
   required: false
   source: TV
   type: source
+  value: TV
 - name: WEB-DL
   negate: false
   required: false
   source: WEBDL
   type: source
+  value: WEBDL
 - name: WEBRip
   negate: false
   required: false
   source: WEBRIP
   type: source
+  value: WEBRIP
 - name: ELiTE
   type: release_group
   required: false
   negate: false
   pattern: ELiTE
+  value: ELiTE
 - name: Megusta
   negate: false
   pattern: MeGusta
   required: false
   type: release_group
+  value: MeGusta
 - name: PSA
   negate: false
   pattern: PSA
   required: false
   type: release_group
+  value: PSA
 assignment:
   score: 1
 tests:

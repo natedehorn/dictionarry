@@ -8,9 +8,11 @@ conditions:
     required: true
     source: web_dl
     type: source
+    value: web_dl
   - name: <resolution>
     negate: false
     required: true
     resolution: <resolution>
     type: resolution
+    value: <resolution>
 tests:

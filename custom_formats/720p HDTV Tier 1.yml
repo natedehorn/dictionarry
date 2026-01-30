@@ -8,41 +8,49 @@ conditions:
   required: true
   resolution: 720p
   type: resolution
+  value: 720p
 - name: HDTV
   negate: false
   required: true
   source: TV
   type: source
+  value: TV
 - name: BMF
   type: release_group
   required: false
   negate: false
   pattern: BMF
+  value: BMF
 - name: CtrlHD
   negate: false
   pattern: CtrlHD
   required: false
   type: release_group
+  value: CtrlHD
 - name: DON
   negate: false
   pattern: DON
   required: false
   type: release_group
+  value: DON
 - name: EbP
   negate: false
   pattern: EbP
   required: false
   type: release_group
+  value: EbP
 - name: EDPH
   negate: false
   pattern: EDPH
   required: false
   type: release_group
+  value: EDPH
 - name: NTb
   negate: false
   pattern: NTb
   required: false
   type: release_group
+  value: NTb
 assignment:
   score: 1
 tests: []

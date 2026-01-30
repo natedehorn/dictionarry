@@ -8,16 +8,19 @@ conditions:
   required: true
   resolution: 1080p
   type: resolution
+  value: 1080p
 - name: HDTV
   negate: false
   required: true
   source: TV
   type: source
+  value: TV
 - name: Sourceless Groups
   type: release_group
   required: true
   negate: true
   pattern: Sourceless Groups
+  value: Sourceless Groups
 assignment:
   score: 1
 tests: []
