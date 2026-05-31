@@ -1,5 +1,5 @@
 name: ASL
-pattern: \b(ASL)\b
+pattern: \b(ASL|BSL|Audio[ ._-]Description)\b
 description: ''
 tags:
 - Enhancements
@@ -12,8 +12,9 @@ tests:
   input: Planet Earth II S01 REPACK UHD BluRay 2160p DD5.1 HDR x265-BHDStudio
   expected: false
 - id: 3
-  input: The Batman (2022) (1080p HMAX WEB-DL H265 SDR DDP Atmos 5.1 English - HONE)
+  input: Widows Bay S01E06 Our History with Audio Description 1080p ATVP WEB-DL DDP5.1
+    Atmos H.264-Kitsune
   expected: true
 - id: 4
-  input: "\t The Batman (2022) 1080p AMZN WEB-DL H265 SDR DDP 5.1 English-DarQ"
+  input: The Penguin S01E01 ASL 1080p HMAX WEB-DL H265 DDP 5.1-FLUX
   expected: true
